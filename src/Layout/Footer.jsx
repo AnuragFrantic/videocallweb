@@ -85,6 +85,11 @@ const Footer = () => {
                                             </Link>
                                         </li>
                                         <li className="d-block mb-2">
+                                            <Link to="/delete-account" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                                Delete Account
+                                            </Link>
+                                        </li>
+                                        <li className="d-block mb-2">
                                             <Link to="/eula"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                                 EULA
                                             </Link>

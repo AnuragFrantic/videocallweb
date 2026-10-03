@@ -226,10 +226,10 @@ const Privacypolicy = () => {
                                                 </h5>
 
                                                 <p>
-                                                    You can email us at <a href="mailto:privacy@jivecam.live">privacy@jivecam.live</a> with your registered email address and request the deletion of your data.
+                                                    You can request account deletion in the JiveCam app from Profile by selecting Delete Account and confirming your request. If you cannot access the app, email <a href="mailto:privacy@jivecam.live">privacy@jivecam.live</a> from your registered email address. We permanently delete your account and associated personal data within 14 days after receiving and verifying the request, except for information we are required or permitted to retain for legal, security, fraud-prevention, or dispute-resolution purposes. See our <a href="/delete-account">Account Deletion Policy</a> for details.
                                                 </p>
                                                 <p>
-                                                    We store data for as long as it is necessary to provide products and services to you and others. Information associated with your account will be kept until your account is deleted, unless we longer need the data to provide the products and services or until we are legally required to do so.
+                                                    Information associated with your account will be kept until your account is deleted, subject to any applicable retention requirements described above.
                                                 </p>
                                             </li>
                                             <li>

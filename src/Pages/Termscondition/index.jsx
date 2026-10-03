@@ -37,7 +37,7 @@ const Termscondition = () => {
                                             If at any time you fail to comply with the provisions of these terms or if activities occur on your account which might cause damage to the Services or infringe or violate any third-party rights or violate any laws or regulations, or for any other reason, we reserve the right to, at our discretion, disable your account and remove or disable any Content you upload or share.
                                         </p>
                                         <p>
-                                            You may delete your account by reaching out to support at the contact details mentioned below.
+                                            You may request permanent account deletion in the JiveCam app from Profile by selecting Delete Account and confirming your request. Your account and associated personal data will be deleted within 14 days after your request is received and verified, subject to legally required or permitted retention. If you cannot access the app, see our <a href="/delete-account">Account Deletion Policy</a> for the email request process.
                                         </p>
                                         <p>
                                             Only persons who can form legally binding contracts under the law of their jurisdiction or those persons (such as minors) that are represented by persons (such as legal guardians) who can form legally binding contracts under the law of their jurisdiction are permitted to use our Services.

@@ -12,6 +12,7 @@ import Privacypolicy from './Pages/Privacypolicy';
 import Contact from './Pages/Contact';
 import Eula from './Pages/Eula';
 import Plans from './Pages/Plans';
+import DeleteAccount from './Pages/DeleteAccount';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/terms-condition' element={<Termscondition />} />
           <Route path='/privacy-policy' element={<Privacypolicy />} />
+          <Route path='/delete-account' element={<DeleteAccount />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/eula' element={<Eula/>}/>
           <Route path='/plans' element={<Plans/>}/>
@@ -45,4 +47,3 @@ function App() {
 }
 
 export default App
-
