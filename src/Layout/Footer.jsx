@@ -9,19 +9,19 @@ import Popup from '../Component/Popup'
 import { useState } from 'react'
 
 const Footer = () => {
-       const [showPopup, setShowPopup] = useState(false);
-    
-        const handlePopupOpen = () => {
-            setShowPopup(true);
-        };
-    
-        const handlePopupClose = () => {
-            setShowPopup(false);
-        };
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handlePopupOpen = () => {
+        setShowPopup(true);
+    };
+
+    const handlePopupClose = () => {
+        setShowPopup(false);
+    };
     const currentYear = new Date().getFullYear();
     return (
         <>
-         {showPopup && <Popup onClose={handlePopupClose} />}
+            {showPopup && <Popup onClose={handlePopupClose} />}
             <section className="py-5 bg-black footer px-3">
                 <div className="container">
                     <div className="row pb-5">
@@ -70,37 +70,37 @@ const Footer = () => {
 
 
                                         <li className="d-block mb-2">
-                                            <Link to="/about"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About Us</Link>
+                                            <Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About Us</Link>
                                         </li>
 
 
                                         <li className="d-block mb-2">
-                                            <Link to="/terms-condition"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                            <Link to="/terms-condition" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                                 Terms & Conditions
                                             </Link>
                                         </li>
                                         <li className="d-block mb-2">
-                                            <Link to="/privacy-policy"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                            <Link to="/privacy-policy" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                                 Privacy Policy
                                             </Link>
                                         </li>
                                         <li className="d-block mb-2">
-                                            <Link to="/delete-account" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                            <Link to="/delete-policy" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                                 Delete Account
                                             </Link>
                                         </li>
                                         <li className="d-block mb-2">
-                                            <Link to="/eula"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                            <Link to="/eula" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                                 EULA
                                             </Link>
                                         </li>
-                                         <li className="d-block mb-2">
-                                            <Link to="/plans"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                        <li className="d-block mb-2">
+                                            <Link to="/plans" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                                 Plans
                                             </Link>
                                         </li>
                                         <li className="d-block mb-2">
-                                            <Link to="/contact"  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                            <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                                 Contact
                                             </Link>
                                         </li>
@@ -116,11 +116,11 @@ const Footer = () => {
                                 </h3>
                                 <div className="pt-3 pb-5">
                                     <Link to={'/'} className="btnlinkfooter">
-                                        <img src={appstore} className="img-fluid" alt="" onClick={handlePopupOpen}/>
+                                        <img src={appstore} className="img-fluid" alt="" onClick={handlePopupOpen} />
                                     </Link>
                                 </div>
                                 <Link to={'/'} className="btnlinkfooter ">
-                                    <img src={playstore} className="img-fluid" alt="" onClick={handlePopupOpen}/>
+                                    <img src={playstore} className="img-fluid" alt="" onClick={handlePopupOpen} />
                                 </Link>
 
                             </div>

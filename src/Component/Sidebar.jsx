@@ -56,7 +56,7 @@ const Sidebar = () => {
                     <li className="nav-item">
                         <div className="title">
                             <NavLink
-                                to="/delete-account"
+                                to="/delete-policy"
                                 className={({ isActive }) =>
                                     `nav-link ${isActive ? "active-link" : ""}`
                                 }
@@ -77,7 +77,7 @@ const Sidebar = () => {
                             </NavLink>
                         </div>
                     </li>
-                     <li className="nav-item">
+                    <li className="nav-item">
                         <div className="title">
                             <NavLink
                                 to="/plans"
@@ -85,7 +85,7 @@ const Sidebar = () => {
                                     `nav-link ${isActive ? "active-link" : ""}`
                                 }
                             >
-                               Plans
+                                Plans
                             </NavLink>
                         </div>
                     </li>
