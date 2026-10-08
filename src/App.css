@@ -1680,6 +1680,16 @@ h5 {
   .footer-wrapper .footer-content h3 {
     width: 50%;
   }
+
+  .insidebanner {
+
+    height: 100px;
+
+  }
+
+  .insidebanner .title {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 576px) {
