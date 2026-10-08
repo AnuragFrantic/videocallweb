@@ -7,6 +7,7 @@ import { useEffect } from "react"
 
 const WebLayout = () => {
     const location = useLocation();
+    const isApp = new URLSearchParams(location.search).get("app") === "true";
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -14,11 +15,11 @@ const WebLayout = () => {
 
     return (
         <>
-            <Header />
+            {!isApp && <Header />}
             <main>
                 {<Outlet />}
             </main>
-            <Footer />
+            {!isApp && <Footer />}
         </>
     )
 }

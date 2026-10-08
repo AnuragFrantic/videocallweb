@@ -25,9 +25,9 @@ function App() {
           <Route path='/terms-condition' element={<Termscondition />} />
           <Route path='/privacy-policy' element={<Privacypolicy />} />
           <Route path='/delete-policy' element={<DeleteAccount />} />
+          <Route path='/plans' element={<Plans />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/eula' element={<Eula />} />
-          <Route path='/plans' element={<Plans />} />
         </Route>
 
 
