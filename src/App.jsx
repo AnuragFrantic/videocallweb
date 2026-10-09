@@ -6,13 +6,8 @@ import './App.css'
 import WebLayout from './Layout/WebLayout'
 import Home from './Pages/Home'
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import About from './Pages/About';
-import Termscondition from './Pages/Termscondition';
-import Privacypolicy from './Pages/Privacypolicy';
 import Contact from './Pages/Contact';
-import Eula from './Pages/Eula';
-import Plans from './Pages/Plans';
-import DeleteAccount from './Pages/DeleteAccount';
+import Policy from './Pages/Policy';
 
 
 function App() {
@@ -21,13 +16,9 @@ function App() {
       <>
         <Route path='/' element={<WebLayout />}>
           <Route index element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/terms-condition' element={<Termscondition />} />
-          <Route path='/privacy-policy' element={<Privacypolicy />} />
-          <Route path='/delete-policy' element={<DeleteAccount />} />
-          <Route path='/plans' element={<Plans />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/eula' element={<Eula />} />
+          {/* About, Terms, Privacy, EULA, Plans, Delete Account... all come from the Policies API */}
+          <Route path='/:slug' element={<Policy />} />
         </Route>
 
 

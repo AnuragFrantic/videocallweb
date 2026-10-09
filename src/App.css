@@ -1682,9 +1682,7 @@ h5 {
   }
 
   .insidebanner {
-
     height: 100px;
-
   }
 
   .insidebanner .title {
@@ -1862,4 +1860,87 @@ footer .logo {
 .modal .modal-dialog .modal-content {
   background: linear-gradient(to bottom right, #9B30FF, #F854D7) !important;
   color: white;
+}
+/* Dynamic policy pages (content comes from the admin panel editor) */
+.policy-content h2,
+.policy-content h3,
+.policy-content h4 {
+  letter-spacing: 0.03em;
+  margin: 28px 0 18px;
+  font-weight: 600;
+  font-size: calc(19px + 4*(100vw - 320px) / 1600);
+}
+
+.policy-content > :first-child {
+  margin-top: 0;
+}
+
+.policy-content h5 {
+  margin-top: 20px;
+}
+
+.policy-content ul,
+.policy-content ol {
+  padding-left: 1.5rem;
+}
+
+.policy-content ul li {
+  list-style-type: disc !important;
+}
+
+.policy-content ol li {
+  list-style-type: decimal !important;
+}
+
+.policy-content ul ul li {
+  list-style-type: circle !important;
+}
+
+.policy-content a {
+  color: rgba(155, 48, 255, 1);
+  word-break: break-word;
+}
+
+/* Sidebar on small screens: horizontal scrolling tabs instead of hiding it */
+@media(max-width:769px) {
+  .left-sidebar {
+    display: block;
+    position: static;
+    margin: 16px 0 8px;
+  }
+
+  .left-sidebar .nav-sidebar {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+
+  .left-sidebar .nav-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .left-sidebar .nav-sidebar .nav-item {
+    margin-bottom: 0;
+    flex: 0 0 auto;
+  }
+
+  .left-sidebar .nav-sidebar .nav-item .title .nav-link {
+    padding: 8px 14px !important;
+    border-radius: 20px;
+    background: white;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .left-sidebar .nav-sidebar .nav-item .title .nav-link.active-link {
+    background-color: rgba(155, 48, 255, 1);
+    border-left: 0;
+    margin-right: 0;
+  }
+}
+
+.policy-content {
+  overflow-wrap: anywhere;
 }
